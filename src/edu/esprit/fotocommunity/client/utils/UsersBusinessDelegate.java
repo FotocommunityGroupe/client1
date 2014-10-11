@@ -118,4 +118,13 @@ public class UsersBusinessDelegate {
 		 return usercmMgmRemote.findAllUsers();
 	}
 	
+	public static List<PremiumUser> findAllUsersPremium() {
+
+		UsersMgmRemote usercmMgmRemote = (UsersMgmRemote) ServiceLocator
+				.getInstance()
+				.lookupProxy("/edu.esprit.fotocommunity.ejb/UsersMgm!edu.esprit.fotocommunity.ejb.services.UsersMgmRemote");
+
+		 return usercmMgmRemote.findAllPremiumUsers();
+	}
+	
 }
