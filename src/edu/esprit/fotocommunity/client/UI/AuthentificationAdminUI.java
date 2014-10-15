@@ -17,6 +17,8 @@ import java.awt.Choice;
 import javax.swing.JCheckBoxMenuItem;
 import java.awt.Button;
 import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class AuthentificationAdminUI extends JFrame {
 
@@ -56,6 +58,10 @@ public class AuthentificationAdminUI extends JFrame {
 		panel.setLayout(null);
 		
 		Button btConnect = new Button("Connect");
+		btConnect.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btConnect.setBounds(82, 297, 93, 22);
 		panel.add(btConnect);
 		

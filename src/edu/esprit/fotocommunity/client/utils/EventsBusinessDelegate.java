@@ -44,7 +44,7 @@ public class EventsBusinessDelegate {
 
 		EventsMgmRemote eventsMgmRemote = (EventsMgmRemote) ServiceLocator
 				.getInstance()
-				.lookupProxy("/edu.esprit.fotocommunity.ejb/PhotosMgm!edu.esprit.fotocommunity.ejb.services.PhotosMgmRemote");
+				.lookupProxy("/edu.esprit.fotocommunity.ejb/EventsMgm!edu.esprit.fotocommunity.ejb.services.EventsMgmRemote");
 
 		eventsMgmRemote.deleteEvent(e);
 	}
@@ -55,7 +55,7 @@ public class EventsBusinessDelegate {
 
 		EventsMgmRemote eventsMgmRemote = (EventsMgmRemote) ServiceLocator
 				.getInstance()
-				.lookupProxy("/edu.esprit.fotocommunity.ejb/PhotosMgm!edu.esprit.fotocommunity.ejb.services.PhotosMgmRemote");
+				.lookupProxy("/edu.esprit.fotocommunity.ejb/EventsMgm!edu.esprit.fotocommunity.ejb.services.EventsMgmRemote");
 
 		 return eventsMgmRemote.findAllEvent();
 	}
